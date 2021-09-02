@@ -1,0 +1,7 @@
+Gorbo, False
+Garby, False
+Hickles, False
+Pickles, False
+Red-eyes, True
+Sharpshot, True
+Hidey, True
