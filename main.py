@@ -22,6 +22,10 @@ def main():
       goblins.append(Goblin(g[0], g[1])) # push the goblin to the array
 
 
+    #Intro message
+    print("Welcome to the D&D Goblin Army Simulator. Your army is at your disposal!")
+
+
     # CRITERIA: At least one while loop
     #Loop indefinitely, but track turn number
     turn = 0
@@ -58,7 +62,7 @@ def main():
 
       for m in misses:
         print(m)
-        
+
     print("Program terminated.")
 
 
