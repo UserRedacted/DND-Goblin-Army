@@ -1,7 +1,9 @@
+# @author Trevor Wilkins
+# SEC 290 PLA Project
+# 8/17/21 & 9/2/21
 
 from enemy import Enemy
 import random
-
 
 # Class for specific enemy type
 # Contains variants for melee and ranged weapons (no change to stats)

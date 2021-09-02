@@ -1,6 +1,12 @@
+# @author Trevor Wilkins
+# SEC 290 PLA Project
+# 8/17/21 & 9/2/21
 
 import random
 
+# Parent class for basic enemy type
+# Contains key data of to-hit modifier, damage dice, and damage modifier
+# Contains attack function with necessary math; allow overwriting messages
 class Enemy:
 
     def __init__(self, to_hit, dmg_die, dmg_mod):
@@ -12,7 +18,7 @@ class Enemy:
 
   
   # CRITERIA: At least one user defined function
-  # Method that performs necessary math and calculates damage for attacks
+  # Function that performs necessary math and calculates damage for attacks
   # Returns damage dealt, 0 if missed
     def attack(self, target_AC):
         
@@ -33,8 +39,10 @@ class Enemy:
         self.attack_message = self.miss_message()
         return dmg
 
+
+    # Default hit and miss messages
     def hit_message(self, dmg):
-        output = "\tHIT: hit the target for " + str(dmg) + " damage."
+        output = f"\tHIT: hit the target for {dmg} damage."
         return output
     
     def miss_message(self):
